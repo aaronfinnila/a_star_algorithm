@@ -105,7 +105,7 @@ public class DemoPanel extends JPanel {
         int yDistance = Math.abs(node.row - startNode.row);
         node.gCost = xDistance + yDistance;
 
-        // GET G COST (distance from start)
+        // GET H COST (distance from goal)
         xDistance = Math.abs(node.col - goalNode.col);
         yDistance = Math.abs(node.row - goalNode.row);
         node.hCost = xDistance + yDistance;
